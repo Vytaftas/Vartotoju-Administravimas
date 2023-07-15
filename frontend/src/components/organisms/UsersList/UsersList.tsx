@@ -72,6 +72,8 @@ const UsersList = () => {
         setCurrentPage(() => 0);
     }, [searchValue]);
 
+    console.log(query);
+
     if (isError) return errorMessage;
 
     if (isLoading) return <Loader iconSize='36px' fullScreen theme={theme} />;
